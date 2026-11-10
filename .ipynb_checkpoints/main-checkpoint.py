@@ -41,3 +41,36 @@ plt.savefig(
     dpi=300
 )
 plt.show()
+
+print(df["loan_amnt"].describe())
+
+print('-----')
+
+plt.figure(figsize=(10, 6))
+
+plt.hist(df["loan_amnt"], bins=30, edgecolor="black")
+
+plt.title("Loan Amount Distribution")
+plt.xlabel("Loan Amount")
+plt.ylabel("Number of Loans")
+
+plt.tight_layout()
+
+plt.savefig("images/loan_amount_distribution.png", dpi=300)
+
+plt.show()
+
+print('-----')
+
+plt.figure(figsize=(10, 4))
+
+plt.boxplot(df["loan_amnt"], vert=False)
+
+plt.title("Loan Amount Boxplot")
+plt.xlabel("Loan Amount")
+
+plt.tight_layout()
+
+plt.savefig("images/loan_amount_boxplot.png", dpi=300)
+
+plt.show()
