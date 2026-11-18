@@ -1,67 +1,38 @@
-# Credit Scoring — Machine Learning Project
+# Credit Scoring ML
 
-## Project Overview
+A machine learning project focused on predicting credit default risk using borrower financial and credit history data.
 
-This project focuses on predicting loan defaults using machine learning.
-
-The goal is to analyze borrower characteristics, identify patterns associated with credit risk, and develop models to predict the probability of loan default.
-
-The project covers the complete ML pipeline, from exploratory data analysis (EDA) to model training, evaluation, and comparison.
+The goal is to build an end-to-end binary classification pipeline, starting with exploratory data analysis and progressing to model training and evaluation.
 
 ## Dataset
 
-**Source:** [Credit Risk Dataset — Hugging Face](https://huggingface.co/datasets/RPD123-byte/credit-risk-datasets)
+- Source: Lending Club dataset (Hugging Face)
+- Observations: 150,000
+- Features: 19
+- Target: `default` (0 — non-default, 1 — default)
 
-- **Observations:** 150,000
-- **Features:** 19
-- **Target:** `default` (0 — No Default, 1 — Default)
-- **Task:** Binary Classification
-
-## Technologies
-
-- Python
-- Pandas
-- Matplotlib
-- Jupyter Notebook
-- Scikit-learn (planned)
-- Git / GitHub
+The dataset is excluded from the repository.
 
 ## Project Progress
 
-### 1. Exploratory Data Analysis (EDA) — In Progress
+- [x] Data loading and initial exploration
+- [x] Exploratory Data Analysis (EDA)
+- [x] Missing values and outlier analysis
+- [x] Feature relationships and correlation analysis
+- [x] Train/test split
+- [x] Initial missing value imputation
+- [x] Initial categorical encoding
+- [x] Numerical feature scaling
+- [ ] Complete preprocessing pipeline
+- [ ] Logistic Regression baseline
+- [ ] Random Forest and Gradient Boosting
+- [ ] Model evaluation and comparison
 
-- [x] Dataset exploration and data types
-- [x] Missing values analysis
-- [x] Target distribution and class imbalance
-- [x] Descriptive statistics
-- [x] Loan amount distribution
-- [x] Outlier detection using IQR
-- [ ] Feature relationships and correlation analysis
+## Notebooks
 
-**[View Detailed EDA Notebook](notebooks/01_EDA.ipynb)**
+- [01_EDA.ipynb](notebooks/01_EDA.ipynb) — exploratory data analysis and key findings.
+- [02_Preprocessing.ipynb](notebooks/02_Preprocessing.ipynb) — data preparation for machine learning.
 
-### 2. Data Preprocessing — Planned
+## Tech Stack
 
-- [ ] Missing value handling
-- [ ] Feature encoding and scaling
-- [ ] Feature engineering
-- [ ] Train/test split
-
-### 3. Model Training — Planned
-
-- [ ] Logistic Regression (baseline)
-- [ ] Random Forest
-- [ ] Gradient Boosting
-
-### 4. Model Evaluation — Planned
-
-- [ ] Precision, Recall, F1-score
-- [ ] ROC-AUC
-- [ ] Model comparison
-- [ ] Feature importance analysis
-
-## Current Status
-
-**Exploratory Data Analysis is in progress.**
-
-The next step is to investigate relationships between borrower characteristics and loan defaults.
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook.
